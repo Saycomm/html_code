@@ -1,0 +1,100 @@
+nav{
+    width: 100%;
+    position: relative;
+}
+
+.nav_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 10em;
+}
+
+.products{
+    max-width: 400px;
+    position: relative;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.products img{
+    width: 100%;
+    max-height: 346px;
+}
+
+.products h1{
+    color: #0c3455;
+    margin-bottom: -5px;
+}
+
+.products .lbs{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgb(149, 149, 149);
+}
+
+.products .linya{
+    width: 100%;
+    border: .1px solid rgb(223, 223, 223);
+}
+
+.products .price{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: red;
+}
+
+.products .korzina{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    position: relative;
+}
+
+.products .korzina .cart{
+    display: flex;
+    align-items: center;
+    max-width:300px;
+    border: 1px solid;
+    text-align: center;
+    padding: 0 40px;
+    right: 0;
+    color: #0c3455;
+    font-family: sans-serif;
+}
+
+.products .korzina select{
+    height: 52px;
+    font-size: 20px;
+}
+
+.products .korzina .cart i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+.nav_bar_price{
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .nav_1{
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width: 342px){
+    .products .korzina .cart p{
+        display: none;
+    }
+
+    .products .korzina .cart i{
+        padding: 15px 0;
+    }
+
+}

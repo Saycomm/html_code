@@ -1,0 +1,62 @@
+
+
+@media only screen and (max-width: 600px) {
+   
+
+    .header{
+        margin: auto;
+        padding: 0;
+        padding-left: 6px;
+    }
+
+    div.home_menu_text_2 ul{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:flex-start;
+    }
+
+    div.search_2{
+        display: none;
+    }
+
+    div.search_2 .add{
+        display: none;
+    }
+
+    div.search_2 i{
+        display: none;
+
+    }
+    nav div.nav_bar{
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .nav_bar_price{
+        max-width: 500px;
+        margin: auto;
+        margin-top: 28px;
+    }
+
+    .nav_bar_price img {
+        max-width: 500px;
+        margin: auto;
+        
+    }
+    .nav_bar a{
+        max-width: 500px;
+        margin: auto;
+    }
+
+    div.section{
+        margin: 0;
+    }
+  }
+

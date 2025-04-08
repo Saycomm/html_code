@@ -1,0 +1,158 @@
+
+
+section{
+    width: 100%;
+    margin: auto;
+    background-color: hsla(0, 0%, 96%, .5);
+}
+
+div.section{
+    padding-top: 40px;
+    margin-right: 14.4em;
+    margin-left: 14.4em;
+    padding-bottom: 20px;
+}
+
+div.section_2{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div.search_text_1{
+    width: 400px;
+}
+
+div.search_text_1 p{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color:rgb(107, 105, 105) ;
+}
+
+div.search_text_1 h4{
+    font-size: 14.6px;
+    font-family: sans-serif;
+    font-weight: 600;
+    
+}
+
+div.section_3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    border-bottom: .4px solid #d3d4d8;
+    padding-bottom: 10px;
+}
+
+div.section_3 p{
+    font-size: 14.6px;
+    font-weight: 500;
+    color: rgb(107, 105, 105);
+    font-family: sans-serif;
+    margin-right: 6px;
+}
+
+div.section_3 select{
+    width: 80px;
+    height: 37px;
+    border-radius: 7px;
+    border: 1px solid #c0c1c4;
+    color: rgb(107, 105, 105);
+    padding-left: 13px;
+}
+
+
+div.section_4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+div.section_last_text_1 p{
+    font-size: 14.6px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(107, 105, 105);
+}
+
+div.section_last_text_2{
+    display: flex;
+    align-items: center;
+    font-size: 14.6px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(107, 105, 105);
+}
+
+div.section_last_text_2 i{
+    font-size: 27px;
+    margin-left: 4px;
+    color: #afafaf;
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      
+    }
+
+    .header{
+        margin: auto;
+        padding: 0;
+        padding-left: 6px;
+    }
+
+    div.home_menu_text_2 ul{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:flex-start;
+    }
+
+    div.search_2{
+        display: none;
+    }
+
+    div.search_2 .add{
+        display: none;
+    }
+
+    div.search_2 i{
+        display: none;
+
+    }
+    nav div.nav_bar{
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .nav_bar_price{
+        max-width: 500px;
+        margin: auto;
+        margin-top: 28px;
+    }
+
+    .nav_bar_price img {
+        max-width: 500px;
+        margin: auto;
+        
+    }
+    .nav_bar a{
+        max-width: 500px;
+        margin: auto;
+    }
+
+    div.section{
+        margin: 0;
+    }
+  }
+
