@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Филиалы</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .branch-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 15px;
+    }
+
+    .branch {
+      display: flex;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .branch-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .branch-text {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .branch-text h2 {
+      margin: 0 0 10px;
+      color: #0d364f;
+      font-size: 20px;
+    }
+
+    .branch-text p {
+      margin: 4px 0;
+      color: #333;
+    }
+
+    .branch-text .region {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .branch-text .reviews {
+      margin-top: 10px;
+      padding-left: 10px;
+      border-left: 3px solid #eee;
+      color: #666;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="branch-container">
+
+    <div class="branch">
+      <img src="../image/first_map.png" alt="" class="branch-img">
+      <div class="branch-text">
+        <h2>Улица Толе би, 44/2</h2>
+        <p class="region">Район: Нура район</p>
+        <p>Астана қаласы</p>
+        <p>Телефон: +7‒702‒466‒12‒97</p>
+        <div class="reviews">
+          ⭐⭐⭐⭐ – Еті өте балғын!  
+          <br>⭐⭐⭐⭐⭐ – Қызметі керемет!
+        </div>
+      </div>
+    </div>
+
+    <div class="branch">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kazakh_meat_market.jpg/320px-Kazakh_meat_market.jpg" class="branch-img" alt="Ет">
+
+      <div class="branch-text">
+        <h2>Тәуке хан даңғылы, 45</h2>
+        <p class="region">Район: Сарайшык район</p>
+        <p>Астана қаласы</p>
+        <p>Телефон: +7‒700‒070‒06‒68</p>
+        <div class="reviews">
+          ⭐⭐⭐⭐⭐ – Мол ассортимент! 
+          <br>⭐⭐⭐⭐⭐ – Бағасы мен сапасы керемет!
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

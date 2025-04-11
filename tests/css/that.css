@@ -34,6 +34,7 @@
 .navs{
     display: flex;
     gap: 50px;
+    align-items: center;
 }
 
 .cas{
@@ -42,7 +43,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     max-width:300px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .cas .corzina{
@@ -54,6 +55,7 @@
     padding: 10px 18px;
     transition: all.4s;
     border-radius: 2px;
+    border: 1.5px solid #0d354f;
 }
 
 .cas .corzina i.bx-cart{
@@ -83,4 +85,25 @@
 
 .meat-box b{
     color: #7db3d4;
+}
+
+.img_nav img{
+    width: 500px;
+}
+
+@media only screen and (max-width: 1144px){
+    .navs{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .navs{
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+
+    .img_nav img{
+        width: 100%;
+    }
 }
