@@ -238,12 +238,10 @@ nav{
     font-size: 14px;
     margin-top: 0;
     color: #727272;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(234 234 234);
 }
 
-
-.secound .linya{
-    border: .1px solid rgb(234 234 234);
-}
 
 .secound .price{
     font-size: 20px;
@@ -330,7 +328,7 @@ nav{
 }
 
 .modal-content h2{
-  border-bottom: 1px solid rgb(234, 234, 234);
+  border-bottom: 1px solid #e8e8eb;
   padding-bottom: 30px;
   padding-left: 20px;
 }
@@ -536,8 +534,8 @@ display: flex;
 
 .in_corzina_1 p{
   margin: 0;
-  color: #e96b65;
-  font-size: 20px;
+  color: #0d364f;
+  font-size: 16px;
 }
 
 .headers {
