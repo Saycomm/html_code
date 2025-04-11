@@ -8,7 +8,12 @@ body{
 
 
 header{
-    width: 100%;
+  width: 100%;
+  position: fixed;
+  background: #e8e8e8bf;
+  height: auto;
+  top: 0;
+  padding-bottom: 15px;
 }
 
 .header-1{
@@ -39,7 +44,7 @@ header{
     border:1px solid #0d364f;
     /* background: #0d364f; */
     /* height: 30px; */
-    top: 140px;
+    top: 130px;
     right: 0;
     z-index: -99;
 
@@ -198,6 +203,7 @@ a{
 
 nav{
     padding: 0 10%;
+    margin-top: 200px;
 }
 
 
@@ -232,6 +238,7 @@ nav{
     font-size: 14px;
     margin-top: 0;
     color: #727272;
+    margin-bottom: 3px;
 }
 
 
@@ -398,6 +405,11 @@ nav{
   justify-content: space-between;
   border-top: 1px solid rgb(234, 234, 234);
   padding-top: 10px;
+}
+
+.ther i{
+  font-size: 30px;
+  margin-right: 10px;
 }
 
 
