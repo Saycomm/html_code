@@ -1,104 +1,112 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Филиалы</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Select</title>
   <style>
     body {
-      font-family: sans-serif;
-      background: #f7f7f7;
+      font-family: Arial, sans-serif;
+      background-image: radial-gradient(at top, #b5e6cf, #9dddad);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       margin: 0;
-      padding: 0;
     }
 
-    .branch-container {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 15px;
+    .select {
+      width: 225px;
+      height: 40px;
+      cursor: pointer;
+      background-color: white;
+      box-shadow: 0 2px 0 white;
+      border-radius: 2px;
+      position: relative;
     }
 
-    .branch {
-      display: flex;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      overflow: hidden;
+    .select-placeholder {
+      display: block;
+      padding-left: 20px;
+      line-height: 40px;
+      color: #3e3e3e;
+      font-size: 1.2rem;
     }
 
-    .branch-img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      flex-shrink: 0;
+    .select-options {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: white;
+      border: 2px solid #2fb5d1;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 10;
     }
 
-    .branch-text {
-      padding: 20px;
-      flex: 1;
+    .select-option {
+      padding-left: 20px;
+      line-height: 40px;
+      cursor: pointer;
+      color: #3e3e3e;
+      font-size: 1.2rem;
     }
 
-    .branch-text h2 {
-      margin: 0 0 10px;
-      color: #0d364f;
-      font-size: 20px;
+    .select-option:hover {
+      background-color: #f7f7f7;
     }
 
-    .branch-text p {
-      margin: 4px 0;
-      color: #333;
+    .select.open .select-options {
+      display: block;
     }
 
-    .branch-text .region {
+    .select-option.selected {
       font-weight: bold;
-      color: #555;
-    }
-
-    .branch-text .reviews {
-      margin-top: 10px;
-      padding-left: 10px;
-      border-left: 3px solid #eee;
-      color: #666;
-      font-style: italic;
+      color: #2fb5d1;
     }
   </style>
 </head>
 <body>
 
-  <div class="branch-container">
-
-    <div class="branch">
-      <img src="../image/first_map.png" alt="" class="branch-img">
-      <div class="branch-text">
-        <h2>Улица Толе би, 44/2</h2>
-        <p class="region">Район: Нура район</p>
-        <p>Астана қаласы</p>
-        <p>Телефон: +7‒702‒466‒12‒97</p>
-        <div class="reviews">
-          ⭐⭐⭐⭐ – Еті өте балғын!  
-          <br>⭐⭐⭐⭐⭐ – Қызметі керемет!
-        </div>
-      </div>
+  <div class="select">
+    <div class="select-placeholder">Select an option</div>
+    <div class="select-options">
+      <div class="select-option">Option 1</div>
+      <div class="select-option">Option 2</div>
+      <div class="select-option">Option 3</div>
+      <div class="select-option">Option 4</div>
     </div>
-
-    <div class="branch">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kazakh_meat_market.jpg/320px-Kazakh_meat_market.jpg" class="branch-img" alt="Ет">
-
-      <div class="branch-text">
-        <h2>Тәуке хан даңғылы, 45</h2>
-        <p class="region">Район: Сарайшык район</p>
-        <p>Астана қаласы</p>
-        <p>Телефон: +7‒700‒070‒06‒68</p>
-        <div class="reviews">
-          ⭐⭐⭐⭐⭐ – Мол ассортимент! 
-          <br>⭐⭐⭐⭐⭐ – Бағасы мен сапасы керемет!
-        </div>
-      </div>
-    </div>
-
   </div>
+
+  <script>
+    const select = document.querySelector('.select');
+    const options = document.querySelectorAll('.select-option');
+    const placeholder = document.querySelector('.select-placeholder');
+
+    // Open/close the select options when the select is clicked
+    select.addEventListener('click', () => {
+      select.classList.toggle('open');
+    });
+
+    // Set the selected option and close the dropdown
+    options.forEach(option => {
+      option.addEventListener('click', () => {
+        placeholder.textContent = option.textContent;
+        options.forEach(opt => opt.classList.remove('selected'));
+        option.classList.add('selected');
+        select.classList.remove('open');
+      });
+    });
+
+    // Close dropdown if clicked outside
+    document.addEventListener('click', (event) => {
+      if (!select.contains(event.target)) {
+        select.classList.remove('open');
+      }
+    });
+  </script>
 
 </body>
 </html>

@@ -1,7 +1,8 @@
 .payed{
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 .first_pay{
@@ -100,6 +101,10 @@ input::placeholder{
     color: #858585;
 }
 
+.last_text_product a{
+    color: black;
+    border-bottom: 1px solid black;
+}
 
 
 .order{
@@ -111,14 +116,14 @@ input::placeholder{
     font-size: 20px;
     transition: all.3s;
     border-radius: 2px;
+    border: 2px solid #0d364f;
 }
 
 .order:hover{
     background: fixed;
     color: #0d364f;
-    border: 2px solid #0d364f;
     border-radius: 2px;
-    margin-top: -3px;
+
 }
 
 .order p{

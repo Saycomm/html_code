@@ -1,0 +1,206 @@
+main{
+    max-width: 80rem;
+    margin: 100px auto;
+
+}
+
+.main_first{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.main_first p.first_text{
+    color: #0d364f;
+    cursor: pointer;
+}
+
+.main_first .first_text a{
+    color: gray;
+}
+
+.main__item{
+    max-width: 79rem;
+    margin: auto;
+}
+
+.products_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    margin-bottom: .5rem;
+    padding: 0 4em 5px;
+    position: relative;
+}
+
+.del{
+    position: absolute;
+    left: 20px;
+}
+
+.del i{
+    color: #0d364f;
+    background: #fdecde;
+    padding: .2rem;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all.3s;
+    cursor: pointer;
+}
+
+.del i:hover{
+    background: #f1caaa;
+}
+ 
+.products_main h2{
+    margin: 0;
+    color: #0d364f;
+}
+
+
+
+.product_img{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.img_item{
+    width: 80px;
+}
+
+.img_item img{
+    width: 100%;
+}
+
+.cart_price{
+    margin-right: 20px;
+}
+
+.cart_menu{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+.product_select{
+    margin-right: 88px;
+}
+
+.product_select select{
+    width: 50px;
+    padding: .6rem;
+    height: 40px;
+}
+
+.product_select select:focus{
+    border-color: #0d364f;
+    border-radius: 1px;
+    overflow: auto;
+}
+
+.main_2{
+    padding-top:20px;
+}
+
+
+.button_cupon{
+    max-width: 79rem;
+    margin:2rem auto .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_for_cupon{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.input_for_cupon input{
+    border: none;
+    height: 40px;
+    padding-left: .5rem;
+    background: #e6eaed;
+}
+
+.input_for_cupon input:focus{
+    border: none;
+    outline: none;
+}
+
+.input_for_cupon button{
+    height: 40px;
+    border-radius: 1px;
+    border: 1px solid #0d364f;
+    padding:0 2.5rem;
+    background: white;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.input_for_cupon button:hover{
+    background: #124462;
+    color: white;
+}
+
+.input_for_cupon a i{
+    width: 20px;
+    font-size: 20px;
+}
+
+.input_for_cupon a{
+    color: darkgoldenrod;
+    display: flex;
+    align-items: center;
+}
+
+.cart_totals{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.all_cart_totals .table{
+    border: 1px solid #ebedf2;
+    width: 500px;
+    position: relative;
+}
+
+.table .table_subtotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #ebedf2;
+}
+
+.checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.checkout p{
+    background: #124462;
+    padding: .8rem 3rem;
+    color: white;
+    font-size: 14px;
+    font-weight: 300; 
+    cursor: pointer;
+}
+
+.checkout p:hover{
+    background: #205270;
+}
+
+.absolute{
+    position: absolute;
+    height: 100%;
+    border-right: 1px solid #ebedf2;
+    left: 300px;
+    top: 0;
+}
