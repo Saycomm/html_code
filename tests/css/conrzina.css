@@ -76,7 +76,7 @@ main{
 }
 
 .cart_price{
-    margin-right: 20px;
+    margin-right:-1px;
 }
 
 .cart_menu{
@@ -86,7 +86,7 @@ main{
 }
 
 .product_select{
-    margin-right: 88px;
+    margin-right: 85px;
 }
 
 .product_select select{
@@ -161,6 +161,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    color: #0d364f;
 }
 
 
@@ -204,3 +205,53 @@ main{
     left: 300px;
     top: 0;
 }
+
+
+.custom-spinner {
+    display: inline-flex;
+    border: 1px solid #d4d4d8;
+    overflow: hidden;
+    width: 65px;
+    height: 40px;
+    font-family: sans-serif;
+    color: #0d364f;
+  }
+
+  .custom-spinner input {
+    width: 100%;
+    padding: 6px 8px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    -moz-appearance: textfield;
+  }
+
+  /* Убираем стрелки в Chrome, Safari, Edge */
+  .custom-spinner input::-webkit-outer-spin-button,
+  .custom-spinner input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .custom-spinner-controls {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #d4d4d8;
+    justify-content: center;
+  }
+
+  .custom-spinner-controls button {
+    width: 20px;
+    height: 16px;
+    font-size: 9px;
+    padding: 0;
+    border: none;
+    background: white;
+    cursor: pointer;
+    color: #0d364f;
+  }
+
+  .custom-spinner-controls button:hover {
+    background: #f1f5f9;
+  }

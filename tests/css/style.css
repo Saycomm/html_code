@@ -94,6 +94,7 @@ header{
   width:300px;
   position: relative;
   isolation: isolate;
+  height: 35px;
 }
 
 .fancy-bg {
@@ -343,3 +344,83 @@ footer{
   text-align: center;
   padding-bottom: 2rem;
 }
+
+
+
+html *,
+html *:before,
+html *:after {
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+}
+
+*:before,
+*:after {
+  z-index: -1;
+}
+
+h1,
+h4 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  margin: 0;
+  line-height: 1;
+}
+
+a.btn-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #0c364f;
+}
+
+
+a.btn-1 i{
+  font-size: 18px;
+}
+
+.centerer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 600px) {
+  .wrap {
+    width: 50%;
+    float: left;
+  }
+}
+[class^=btn-] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 45px;
+  max-width: 250px;
+  border: 1px solid #e3e2e2;
+}
+
+.btn-1 {
+  color: #0c364f;
+  font-size: 14px;
+}
+.btn-1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #0c364f;
+  transform: translateX(-100%);
+}
+.btn-1:hover {
+  color: white;
+}
+.btn-1:hover:before {
+  transform: translateX(0);
+}
+

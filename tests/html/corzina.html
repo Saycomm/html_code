@@ -51,8 +51,8 @@
                     </label>
                 </form>
                 <div class="header_options_icons">
-                    <i class='bx bx-user'></i>
-                    <a href="#cart-modal"><i class='bx bx-cart'></i></a>
+                    <a href=""><i class='bx bx-user'></i></a>
+                    <a href="corzina.html"><i class='bx bx-cart'></i></a>
                 </div>
             </div>
         </div>
@@ -89,14 +89,13 @@
                 <div class="cart_menu">
                     <p class="price cart_price">2300тг</p>
                     <div class="product_select">
-                        <select name="" id="">
-                            <option value="1">1</option>
-                            <option value="1">2</option>
-                            <option value="1">3</option>
-                            <option value="1">4</option>
-                            <option value="1">5</option>
-                            <option value="1">6</option>
-                        </select>
+                        <div class="custom-spinner">
+                            <input type="number" id="spinner" value="1" step="1" />
+                            <div class="custom-spinner-controls">
+                              <button onclick="increment()">▲</button>
+                              <button onclick="decrement()">▼</button>
+                            </div>
+                          </div>
                     </div>
                     <p class="price">2300тг</p>                
                 </div>
@@ -114,14 +113,13 @@
                 <div class="cart_menu">
                     <p class="price cart_price">2300тг</p>
                     <div class="product_select">
-                        <select name="" id="">
-                            <option value="1">1</option>
-                            <option value="1">2</option>
-                            <option value="1">3</option>
-                            <option value="1">4</option>
-                            <option value="1">5</option>
-                            <option value="1">6</option>
-                        </select>
+                        <div class="custom-spinner">
+                            <input type="number" id="spinner" value="1" step="1" />
+                            <div class="custom-spinner-controls">
+                              <button onclick="increment()">▲</button>
+                              <button onclick="decrement()">▼</button>
+                            </div>
+                          </div>
                     </div>
                     <p class="price">2300тг</p>                
                 </div>
@@ -139,14 +137,13 @@
                 <div class="cart_menu">
                     <p class="price cart_price">2300тг</p>
                     <div class="product_select">
-                        <select name="" id="">
-                            <option value="1">1</option>
-                            <option value="1">2</option>
-                            <option value="1">3</option>
-                            <option value="1">4</option>
-                            <option value="1">5</option>
-                            <option value="1">6</option>
-                        </select>
+                        <div class="custom-spinner">
+                            <input type="number" id="spinner" value="1" step="1" />
+                            <div class="custom-spinner-controls">
+                              <button onclick="increment()">▲</button>
+                              <button onclick="decrement()">▼</button>
+                            </div>
+                          </div>
                     </div>
                     <p class="price">2300тг</p>                
                 </div>
@@ -183,7 +180,7 @@
                         <div class="absolute"></div>
                     </div>
                     <div class="checkout">
-                        <p>Есепке алуды жалғастырыңыз</p>
+                        <p><a href="opalata.html">Есепке алуды жалғастырыңыз</a></p>
                     </div>
                     
             </div>
@@ -238,6 +235,23 @@
 
     
 
+    <script>
+        const input = document.getElementById('spinner');
+    
+        function increment() {
+          const current = parseFloat(input.value || 0);
+          const fractional = current % 1;
+          const next = Math.floor(current + 1) + fractional;
+          input.value = next.toFixed(10).replace(/\.0+$/, '').replace(/(\.\d+?)0+$/, '$1');
+        }
+    
+        function decrement() {
+          const current = parseFloat(input.value || 0);
+          const fractional = current % 1;
+          const next = Math.max(0, Math.ceil(current - 1) + fractional);
+          input.value = next.toFixed(10).replace(/\.0+$/, '').replace(/(\.\d+?)0+$/, '$1');
+        }
+      </script>
     
 
 </body>
